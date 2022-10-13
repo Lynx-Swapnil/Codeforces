@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    long long int a,b,c,d;
+    scanf("%lld%lld%lld%lld",&a,&b,&c,&d);
+    if(a>=c && b<=d)
+        printf("%lld %lld",a,b);
+    else if(c<=b && d>b)
+        printf("%lld %lld",c,b);
+    else if(c>=a && d<=b)
+        printf("%lld %lld",c,d);
+    else if(c>b || a>d)
+        printf("-1");
+    else if(a>=c && d<b)
+        printf("%lld %lld",a,d);
+        else
+  return 0;
+}
